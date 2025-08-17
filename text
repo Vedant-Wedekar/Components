@@ -1,0 +1,1 @@
+npx create-next-app@latest comq --use-npm --ts --eslint --tailwind --src-dir --app
