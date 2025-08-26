@@ -1,1 +1,30 @@
 npx create-next-app@latest comq --use-npm --ts --eslint --tailwind --src-dir --app
+
+
+
+✅ 1. Create the React App
+npm create vite@latest my-react-app -- --template react
+cd my-app
+
+✅ 2. Install Tailwind CSS and dependencies
+npm install tailwindcss @tailwindcss/vite
+
+✅ 3. Configure Tailwind (tailwind.config.js)
+import tailwindcss from '@tailwindcss/vite'
+
+    tailwindcss(),
+
+✅ 4. Add Tailwind to CSS (src/index.css)
+@import "tailwindcss";
+
+✅ 5. Run the app
+npm run dev 
+
+✅ 6. Install React
+npm install @vitejs/plugin-react --save-dev
+
+
+cd ..
+
+cd Day-3/my-react-app
+
