@@ -14,11 +14,12 @@ import  { CustomKanban }  from './components/CustomKanban'
 import { ShiftingDropDown } from './components/ShiftingDropDown'
 import { HoverImageLinks } from './components/HoverImageLinks'
 import { DrawCircleText } from './components/DrawCircleText'
-
+import Lanyard from './components/Lanyard'
 // import Orb from './components/Orb'
 
 
 // universe.io , Animate UI ,  React bits im lonely tab
+
 
 const items = [
   {
@@ -167,6 +168,9 @@ const App = () => {
 {/* BuouUi */}
 
 <koko />
+<div className="w-300">
+<Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+</div>
     </div>
   )
 }
