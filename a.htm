@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blush Gradient Background</title>
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .gradient-blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(80px);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white flex items-center justify-center relative overflow-hidden">
+
+
+  <div
+    class="gradient-blob w-[500px] h-[500px] -left-40 -top-32"
+    style="background: radial-gradient(circle, rgba(99,102,241,0.6), transparent 70%);"
+    aria-hidden="true"></div>
+
+
+  <div
+    class="gradient-blob w-[400px] h-[400px] right-[-6rem] top-20"
+    style="background: radial-gradient(circle, rgba(236,72,153,0.6), transparent 70%);"
+    aria-hidden="true"></div>
+
+
+
+</body>
+</html>
