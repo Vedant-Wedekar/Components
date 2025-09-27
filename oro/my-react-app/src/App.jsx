@@ -15,41 +15,49 @@ import { ShiftingDropDown } from './components/ShiftingDropDown'
 import { HoverImageLinks } from './components/HoverImageLinks'
 import { DrawCircleText } from './components/DrawCircleText'
 import Lanyard from './components/Lanyard'
+import Koko from './components/koko'
+import FlyingPosters from './components/FlyingPosters'
+import SpotlightCard from './components/StopLightCard'
+import ProfileCard from './components/ProfileCard.tsx'
 // import Orb from './components/Orb'
 
 
 // universe.io , Animate UI ,  React bits im lonely tab
-
-
 const items = [
-  {
-    image: 'https://picsum.photos/300/300?grayscale',
-    link: 'https://google.com/',
-    title: 'Item 1',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://picsum.photos/400/400?grayscale',
-    link: 'https://google.com/',
-    title: 'Item 2',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://picsum.photos/500/500?grayscale',
-    link: 'https://google.com/',
-    title: 'Item 3',
-    description: 'This is pretty cool, right?'
-  },
-  {
-    image: 'https://picsum.photos/600/600?grayscale',
-    link: 'https://google.com/',
-    title: 'Item 4',
-    description: 'This is pretty cool, right?'
-  }
+  'https://picsum.photos/500/500?grayscale', 
+  'https://picsum.photos/600/600?grayscale', 
+  'https://picsum.photos/400/400?grayscale'
 ];
+
+// const items = [
+//   {
+//     image: 'https://picsum.photos/300/300?grayscale',
+//     link: 'https://google.com/',
+//     title: 'Item 1',
+//     description: 'This is pretty cool, right?'
+//   },
+//   {
+//     image: 'https://picsum.photos/400/400?grayscale',
+//     link: 'https://google.com/',
+//     title: 'Item 2',
+//     description: 'This is pretty cool, right?'
+//   },
+//   {
+//     image: 'https://picsum.photos/500/500?grayscale',
+//     link: 'https://google.com/',
+//     title: 'Item 3',
+//     description: 'This is pretty cool, right?'
+//   },
+//   {
+//     image: 'https://picsum.photos/600/600?grayscale',
+//     link: 'https://google.com/',
+//     title: 'Item 4',
+//     description: 'This is pretty cool, right?'
+//   }
+// ];
 const App = () => {
   return (
-    <div className='flex  mt-70 w-3500 gap-10'>
+    <div className='flex h-1000 mt-70 w-3500 gap-10'>
       {/* <Card/> */}
       <Cardtwo className=''/>
       <Error/>
@@ -117,10 +125,10 @@ const App = () => {
 
 
 
-
+{/* 
 <div style={{ height: '600px', position: 'relative' }}>
   <InfiniteMenu items={items}/>
-</div>
+</div> */}
 
 
 <h1>circle hai yaha </h1>
@@ -167,10 +175,38 @@ const App = () => {
 
 {/* BuouUi */}
 
-<koko />
+<Koko />
 <div className="w-300">
 <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
 </div>
+
+
+<div style={{ height: '600px', position: 'relative' }}>
+  <FlyingPosters items={items}/>
+</div>
+
+
+<SpotlightCard className="custom-spotlight-card h-100" spotlightColor="rgba(0, 229, 255, 0.2)">
+  // Content goes here
+</SpotlightCard>
+
+
+  <div className=" h-300">
+<ProfileCard
+  name="Vedant Wedekar"
+  title="Web Developer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+  onContactClick={() => console.log('Contact clicked')}
+/>
+</div>
+
+
     </div>
   )
 }

@@ -12,6 +12,7 @@ export const HoverImageLinks = () => {
           imgSrc="/imgs/random/11.jpg"
           href="#"
         />
+        
         <Link
           heading="Clients"
           subheading="We work with great people"
