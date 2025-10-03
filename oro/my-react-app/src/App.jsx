@@ -205,7 +205,34 @@ const App = () => {
   onContactClick={() => console.log('Contact clicked')}
 />
 </div>
-
+ <div className=" h-300">
+<ProfileCard
+  name="Vedant Wedekar"
+  title="Web Developer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+  onContactClick={() => console.log('Contact clicked')}
+/>
+</div>
+ <div className=" h-300">
+<ProfileCard
+  name="Vedant Wedekar"
+  title="Web Developer"
+  handle="Code_Ved"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="../src/assets/model1.png"
+  showUserInfo={true}
+  enableTilt={true}
+  enableMobileTilt={false}
+  onContactClick={() => console.log('Contact clicked')}
+/>
+</div>
 
     </div>
   )
